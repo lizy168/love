@@ -29,7 +29,7 @@ jobs:
       with:
         repository: love2d/love-appimage-source
         ref: 12.x
-    - name: Checkout LÖVE
+    - name: Checkout L脰VE
       uses: actions/checkout@v4
       with:
         path: love2d-${{ github.sha }}
@@ -165,7 +165,7 @@ jobs:
       id: vars
       run: |
         rem JIT Modules
-        if "${{ matrix.platform }}-${{ matrix.install }}" == "x64" (
+        if "${{ matrix.platform }}" == "x64" (
           (echo jitmodules=1)>> "%GITHUB_OUTPUT%"
         ) else (
           (echo jitmodules=0)>> "%GITHUB_OUTPUT%"
