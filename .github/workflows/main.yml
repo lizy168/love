@@ -29,7 +29,7 @@ jobs:
       with:
         repository: love2d/love-appimage-source
         ref: 12.x
-    - name: Checkout LÖVE
+    - name: Checkout L脰VE
       uses: actions/checkout@v4
       with:
         path: love2d-${{ github.sha }}
