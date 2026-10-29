@@ -34,7 +34,7 @@ jobs:
       with:
         repository: love2d/love-appimage-source
         ref: 12.x
-    - name: Checkout LÖVE
+    - name: Checkout L脰VE
       uses: actions/checkout@v4
       with:
         path: love2d-${{ github.sha }}
@@ -427,7 +427,7 @@ jobs:
         repository: love2d/love-apple-dependencies
         ref: main
     - name: Move Dependencies
-      run:
+      run: |
         mv apple-dependencies/macOS/Frameworks platform/xcode/macosx
         mv apple-dependencies/shared platform/xcode
     - name: Build
